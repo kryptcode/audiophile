@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 const Banner = ({ img, title, text, slug, rev }) => {
     const route = useRouter()

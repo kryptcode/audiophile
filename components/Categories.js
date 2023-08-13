@@ -1,6 +1,8 @@
+"use client"
+
 import { ArrowRightIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import React from 'react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 const Categories = () => {
     const router = useRouter()
