@@ -36,7 +36,7 @@ const earphones = () => {
         <div className='bg-black pb-3' >
         <div className='bg-white/30 h-[1px]  w-[95%] md:w-[85%] mx-auto  ' />
         </div>
-        <Hero title='' />
+        <Hero title='earphones' />
         <Banner 
             img={'https://audiophile-gamma.vercel.app/assets/product-yx1-earphones/desktop/image-product.jpg'}
             title={'YX1 Wireless Earphones'}
