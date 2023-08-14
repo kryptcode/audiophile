@@ -1,4 +1,4 @@
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
 
 const Recommendations = ({ items }) => {
   const route = useRouter()
@@ -9,8 +9,8 @@ const Recommendations = ({ items }) => {
         </h2>
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-12 space-y-8 md:space-y-0">
             {
-              items.map(item => (
-                <div className='flex flex-col items-center space-y-7 py-2'>
+              items.map((item,index) => (
+                <div className='flex flex-col items-center space-y-7 py-2' key={index}>
                   <div>
                     <img src={item.image.desktop} alt="" />
                   </div>

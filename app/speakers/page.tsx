@@ -23,14 +23,14 @@ const speakers = () => {
             img={'https://audiophile-gamma.vercel.app/assets/product-zx9-speaker/desktop/image-product.jpg'}
             title={'ZX9 Speakers'}
             text={'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.'}
-            slug={'result[0].slug'}
+            slug={'/zx9-speaker'}
             rev={false}
         />
         <Banner 
             img={'https://audiophile-gamma.vercel.app/assets/product-zx7-speaker/desktop/image-product.jpg'}
             title={'ZX7 Speaker'}
             text={'Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.'}
-            slug={'result[1].slug'}
+            slug={'/zx7-speaker'}
             rev
         />
         <Categories />

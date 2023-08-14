@@ -18,8 +18,8 @@ const Features = ({ text, includes }) => {
             </h2>
             <div className='space-y-3'>
             {
-                includes.map((item) => (
-                    <div className='space-x-3'>
+                includes.map((item, index) => (
+                    <div className='space-x-3' key={index}>
                             <span className='text-[#d87d4a] font-semibold '>
                                 {item.quantity}x
                             </span>

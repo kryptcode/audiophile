@@ -8,22 +8,7 @@ import Categories from '@/components/Categories'
 import BringingBanner from '@/components/BringingBanner'
 import Footer from '@/components/Footer'
 
-async function getData() {
-  const data = await fetch('https://jsonkeeper.com/b/S9OG').then(res => res.json())
-
-  const result = data.filter((product: any) => product.category === "earphones") 
-
-  return result
-}
-
 const earphones = () => {
-    const [items, setItems] = useState([])
-
-    async function get() {
-        const res = await getData()
-
-        setItems(res)
-    }
 
   return (
     <div className='font-main'>
@@ -41,7 +26,7 @@ const earphones = () => {
             img={'https://audiophile-gamma.vercel.app/assets/product-yx1-earphones/desktop/image-product.jpg'}
             title={'YX1 Wireless Earphones'}
             text={'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.'}
-            slug={''}
+            slug={'/yx1-earphones'}
             rev={false}
         />
         <Categories />
